@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Homework9</title>
 </head>
 <body>
+<script>
+    // Надрукувати повну таблицю множення від 1 до 10
+    let multtab  = "";
 
+    for (let i = 1; i <= 10; i++) {
+        for (let j = 1; j <= 10; j++) {
+            multtab = `${multtab}\n ${i} x ${j} = ${i * j}`;
+        }
+        multtab = `${multtab}\n`;
+    }
+    alert(multtab);
+</script>
 </body>
 </html>
