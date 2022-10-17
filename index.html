@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework9</title>
+</head>
+<body>
+<script>
+    // Вивести на сторінку в один рядок через кому числа від 10 до 20
+    let result1 = "";
+    for (let i = 10; i <= 20; i++) {
+      result1 = result1 === "" ? `${i}`:`${result1},${i}`;
+    }
+    alert(result1);
+
+    // Вивести квадрати чисел від 10 до 20
+    let result2 = "";
+    for (let i = 10; i <= 20; i++) {
+        result2 = result2 === "" ? `${i * i}`: `${result2},${i * i}`
+    }
+    alert(result2);
+
+    // Вивести таблицю множення на 7
+    let mult7 = "";
+    for (let i = 1; i <= 10; i++) {
+        mult7 = mult7 === "" ? `${i * 7}`:`${mult7}, ${i * 7}`;
+    }
+    alert(mult7);
+
+    // Знайти суму всіх цілих чисел від 1 до 15
+    let sum = 0;
+    for (let i = 0; i <= 15; i++) {
+        sum += i;
+    }
+    alert(sum);
+
+   // Знайти добуток усіх цілих чисел від 15 до 35
+    let mult = 1;
+    for (let i = 15; i <= 35; i++) {
+        mult *= i;
+    }
+    alert(mult);
+
+    // Знайти середнє арифметичне всіх цілих чисел від 1 до 500
+    let result3 = 0;
+    for (let i = 1; i <= 500; i++) {
+        result3 += i;
+    }
+    alert(result3/500);
+
+    // Вивести суму лише парних чисел в діапазоні від 30 до 80
+    let sum1 = 0;
+    for (let i = 30; i <= 80; i+=2) {
+        sum1 += i;
+    }
+    alert(sum1);
+
+    // Вивести всі числа в діапазоні від 100 до 200 кратні 3
+    let result4 = "";
+    for (let i = 100; i <= 200; i++) {
+        if (i % 3 === 0) {
+            result4 = result4 === "" ? `${i}` : `${result4},${i}`;
+        }
+    }
+    alert(result4);
+
+    // Дано натуральне число. Знайти та вивести на сторінку всі його дільники
+    let num = 84;
+    let result5 = "";
+    for (let i = 1; i <= num; i++) {
+        if (num % i === 0) {
+            result5 = result5 === "" ? `${i}` : `${result5}, ${i}`;
+        }
+    }
+    alert(result5);
+
+
+    // Визначити кількість його парних дільників
+    let num1 = 36;
+    let result6 = 0;
+
+    for (let i = 1; i <= num1; i++) {
+        if (num1 % i === 0) {
+                result6 += 1;
+        }
+    }
+    if (result6 % 2 === 0) {
+        alert(result6);
+    } else alert(result6 - 1);
+
+    // Знайти суму його парних дільників
+    let num2 = 20;
+    let result7 = 0;
+
+    for (let i = 1; i <= num2; i++) {
+        if (num2 % i === 0) {
+            result7 += i;
+        }
+    }
+    if (result7 % 2 === 0) {
+        alert(result7);
+    } else alert(result7 - Math.sqrt(num2));
+
+    // Надрукувати повну таблицю множення від 1 до 10
+    let multtab  = "";
+
+    for (let i = 0; i <= 10; i++) {
+        for (let j = 0; j <= 10; j++) {
+            multtab = multtab === "" ? `${j}` : `${multtab} ${j}`;
+        }
+    }
+    alert(multtab);
+
+
+</script>
+</body>
+</html>
